@@ -1,0 +1,29 @@
+{
+  "name": "react-learning",
+  "version": "1.0.0",
+  "description": "Progressive React/JS/HTML/CSS practice repository with exercises and automated testing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run-exercise.js",
+    "test:all": "node scripts/test-all.js",
+    "create": "node scripts/create-exercise.js",
+    "validate": "node scripts/validate-structure.js"
+  },
+  "keywords": [
+    "react",
+    "learning",
+    "exercises",
+    "practice",
+    "typescript"
+  ],
+  "author": "",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/prompts": "^2.4.9",
+    "chalk": "^5.3.0",
+    "execa": "^8.0.1",
+    "prompts": "^2.4.2"
+  }
+}

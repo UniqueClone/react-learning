@@ -1,0 +1,222 @@
+/* TODO: Complete this responsive layout using CSS Grid and Flexbox
+ *
+ * Requirements:
+ * 1. Use CSS Grid for .layout (page structure)
+ * 2. Use Flexbox for .nav, .cards, and .card components
+ * 3. Mobile-first approach: base styles for mobile, then media queries for larger screens
+ * 4. Breakpoints: 768px (tablet), 1024px (desktop)
+ * 5. Make images responsive with max-width: 100%
+ *
+ * Layout structure:
+ * - Mobile: header / main / footer (sidebar hidden)
+ * - Tablet: header / (sidebar + main) / footer (2 columns of cards)
+ * - Desktop: Same but 3 columns of cards, wider sidebar
+ */
+
+/* ===== LAYOUT GRID (TODO: Complete this) ===== */
+.layout {
+  /* TODO: Set up CSS Grid
+   * Mobile: Single column with areas: header, main, footer
+   * Tablet (768px+): Add sidebar, use grid-template-columns
+   * Desktop (1024px+): Adjust column widths
+   */
+  display: grid;
+  min-height: 100vh;
+  /* Add grid-template-columns and grid-template-areas */
+}
+
+/* ===== HEADER ===== */
+.header {
+  grid-area: header;
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  /* TODO: Add flexbox for header layout */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav {
+  /* TODO: Use Flexbox to layout navigation links
+   * Mobile: Stack vertically or wrap
+   * Desktop: Horizontal row with gap
+   */
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  grid-area: sidebar;
+  background: #ecf0f1;
+  padding: 1.5rem;
+  /* TODO: Hide on mobile, show on tablet+ */
+  /* Mobile: display: none */
+  /* Tablet (768px+): display: block */
+}
+
+.sidebarTitle {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoryItem {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.categoryItem:hover {
+  background: #d5dbdb;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+  grid-area: main;
+  padding: 2rem 1rem;
+  background: #f8f9fa;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* ===== CARDS GRID (TODO: Complete this) ===== */
+.cards {
+  /* TODO: Use Flexbox for card layout
+   * - display: flex
+   * - flex-wrap: wrap
+   * - gap for spacing
+   *
+   * Cards should:
+   * - Mobile: 1 per row (100% width)
+   * - Tablet (768px+): 2 per row
+   * - Desktop (1024px+): 3 per row
+   */
+}
+
+.card {
+  /* TODO: Set flex properties for responsive columns
+   * Mobile: flex: 1 1 100%
+   * Tablet: flex: 1 1 calc(50% - gap)
+   * Desktop: flex: 1 1 calc(33.333% - gap)
+   *
+   * Or use min-width approach:
+   * flex: 1 1 300px; (automatically wraps)
+   */
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cardImage {
+  /* TODO: Make image responsive
+   * - width: 100%
+   * - height: auto or fixed height with object-fit: cover
+   * - Maintain aspect ratio
+   */
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.cardPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 0 0 1rem 0;
+}
+
+.cardButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cardButton:hover {
+  background: #2980b9;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  grid-area: footer;
+  background: #2c3e50;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* ===== MEDIA QUERIES (TODO: Add these) ===== */
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+  /* TODO: Update .layout grid for tablet
+   * - Add sidebar column
+   * - Update grid-template-areas
+   * - Set grid-template-columns (e.g., 200px 1fr)
+   */
+
+  /* TODO: Show sidebar */
+
+  /* TODO: Make nav horizontal */
+
+  /* TODO: Update card flex for 2 columns */
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+  /* TODO: Update .layout for desktop
+   * - Wider sidebar (e.g., 250px)
+   */
+
+  /* TODO: Update card flex for 3 columns */
+
+  /* TODO: Adjust main content padding */
+}

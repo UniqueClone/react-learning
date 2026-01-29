@@ -1,0 +1,50 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-name {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #ecf0f1;
+  color: #7f8c8d;
+  margin-top: 4px;
+}
+
+.card-bio {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}

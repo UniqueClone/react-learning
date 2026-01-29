@@ -1,0 +1,174 @@
+/* TODO: Add CSS animations and transitions
+ *
+ * Requirements:
+ * 1. Create @keyframes for spinner rotation
+ * 2. Add transition properties to modal and backdrop
+ * 3. Add hover effects to animated buttons
+ * 4. Use transform and opacity (GPU-accelerated)
+ * 5. Add prefers-reduced-motion media query
+ */
+
+/* ===== Container ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #34495e;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ===== Open Button ===== */
+.openButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.openButton:hover {
+  background: #2980b9;
+}
+
+/* ===== Modal (TODO: Add transitions) ===== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  /* TODO: Add opacity transition for fade in/out */
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  /* TODO: Add opacity and transform transitions for slide and fade */
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.modalContent {
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modalButton {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.closeButton {
+  background: #95a5a6;
+  color: white;
+}
+
+.closeButton:hover {
+  background: #7f8c8d;
+}
+
+/* ===== Spinner (TODO: Add @keyframes rotation) ===== */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  /* TODO: Add animation property with rotation keyframes */
+}
+
+/* TODO: Create @keyframes rotate */
+/* @keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+/* ===== Animated Button (TODO: Add hover animations) ===== */
+.animatedButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  /* TODO: Add transition for transform and box-shadow */
+}
+
+.animatedButton:hover {
+  /* TODO: Add transform: scale() and box-shadow */
+}
+
+.buttonPrimary {
+  background: #3498db;
+  color: white;
+}
+
+.buttonSecondary {
+  background: #95a5a6;
+  color: white;
+}
+
+.buttonDanger {
+  background: #e74c3c;
+  color: white;
+}
+
+/* ===== Accessibility (TODO: Add reduced motion) ===== */
+/* @media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+} */

@@ -1,0 +1,20 @@
+.counter {
+  text-align: center;
+  padding: 2rem;
+}
+
+.counter h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  min-width: 100px;
+}

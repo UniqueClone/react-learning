@@ -1,0 +1,48 @@
+.base {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.base:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.base:active {
+  transform: translateY(0);
+}
+
+.primary {
+  composes: base;
+  background: #3498db;
+  color: white;
+}
+
+.primary:hover {
+  background: #2980b9;
+}
+
+.secondary {
+  composes: base;
+  background: #95a5a6;
+  color: #2c3e50;
+}
+
+.secondary:hover {
+  background: #7f8c8d;
+}
+
+.danger {
+  composes: base;
+  background: #e74c3c;
+  color: white;
+}
+
+.danger:hover {
+  background: #c0392b;
+}

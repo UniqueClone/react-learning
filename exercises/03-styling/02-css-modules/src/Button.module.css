@@ -1,0 +1,45 @@
+/* TODO: Define base button styles */
+.base {
+  /* Add common button styles:
+     - padding
+     - border
+     - border-radius
+     - font-size
+     - font-weight
+     - cursor
+     - transition
+  */
+}
+
+/* TODO: Define primary variant */
+.primary {
+  /* Use composes to inherit base styles */
+  /* composes: base; */
+
+  /* Add primary-specific styles:
+     - background color (blue)
+     - text color (white)
+  */
+}
+
+/* TODO: Define secondary variant */
+.secondary {
+  /* Use composes to inherit base styles */
+
+  /* Add secondary-specific styles:
+     - background color (gray)
+     - text color (dark gray)
+  */
+}
+
+/* TODO: Define danger variant */
+.danger {
+  /* Use composes to inherit base styles */
+
+  /* Add danger-specific styles:
+     - background color (red)
+     - text color (white)
+  */
+}
+
+/* Optional: Add hover states */
